@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { useMotionValue, useInView, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
+import Education from '@/components/Education'
 
 const AnimatedNumbers = ({ value }) => {
 
@@ -56,7 +57,7 @@ const about = () => {
                             </p>
 
                             <p className='my-4 font-medium'>
-                                I believe that design is about more than just making things look pretty - it's about solving problems and
+                                I believe that design is about more than just making things look pretty - its about solving problems and
                                 creating intuitive, enjoyable experiences for users.
                             </p>
 
@@ -97,7 +98,8 @@ const about = () => {
                     </div>
 
                     <Skills />
-                    <Experience/>
+                    <Experience />
+                    <Education/>
                 </Layout>
             </main>
 
