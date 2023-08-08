@@ -56,9 +56,9 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Feecon | Project Page
+        <title>Feecon | Project Page </title>
           <meta name='description' contents='any description' />
-        </title>
+        
       </Head>
 
       <main className='w-full mb-16 flex flex-col items-center justify-center'>

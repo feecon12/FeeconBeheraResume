@@ -39,9 +39,9 @@ const about = () => {
     return (
         <>
             <Head>
-                <title>Feecon | About Page
+                <title>Feecon | About Page </title>
                     <meta name='description' contents='any description' />
-                </title>
+                
             </Head>
             <main className='flex w-full flex-col items-center justify-center'>
                 <Layout className='pt-16'>
