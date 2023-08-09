@@ -10,7 +10,7 @@ const Details = ({ type, time, place, info }) => {
             <h3 className='capitalize font-bold text-2xl'>
                 {type}
             </h3>
-            <span className='capitalize font-medium text-dark/75'>
+            <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
                 {time} | {place}
             </span>
             <p className='font-medium w-full'>
@@ -38,32 +38,31 @@ const Education = () => {
 
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
-                    className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top' />
+                    className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light' />
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
 
+                    
                     <Details
-                        type={'Bachelor Of Science In Computer Science'}
-                        time={'2016-2020'}
-                        place={'Massachusetts Institute Of Technology (MIT)'}
-                        info=" Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence"
+                        type={'Fullstack Engineering'}
+                        time={'2022-present'}
+                        place={'Scaler Academy'}
+                        info=" Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Data Engineering"
 
                     />
 
-<Details
-                        type={'Bachelor Of Science In Computer Science'}
+                    <Details
+                        type={'Bachelor of Technology In Electronics and Communication'}
                         time={'2016-2020'}
-                        place={'Massachusetts Institute Of Technology (MIT)'}
-                        info=" Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence"
+                        place={'Institute of Technical Education and Research (ITER, SOA University)'}
+                        info="Relevant courses included Electronics and Comunication, Computer Architecture, and programming in MATLAB, and Python"
 
                     />
+
                     <Details
-                        type={'Bachelor Of Science In Computer Science'}
-                        time={'2016-2020'}
-                        place={'Massachusetts Institute Of Technology (MIT)'}
-                        info=" Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence"
+                        type={'Higher Secondary Education in Science'}
+                        time={'2016'}
+                        place={'Kendriya Vidyalaya'}
+                        info=" Relevant courses included Physics, Chemistry, Mathematics, and Computer Sciences"
 
                     />
 
