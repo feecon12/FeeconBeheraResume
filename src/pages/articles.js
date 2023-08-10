@@ -71,7 +71,12 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         target='_blank'
         className='w-full inline-block cursor-pointer overflow-hidden rounded-lg'
       >
-        <FramerImage src={img} alt={title} className='w-full h-auto' whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }} />
+        <FramerImage src={img} alt={title} className='w-full h-auto' whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}
+        priority
+        sizes='(max-widthL768px) 100vw,
+        (max-width:1200px) 60vw,
+        50vw'
+        />
       </Link>
 
       <Link href={link} target='_blank'>

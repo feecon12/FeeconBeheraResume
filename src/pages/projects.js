@@ -18,15 +18,15 @@ const FeaturedProject = ({ type, title, img, summary, link, github }) => {
         <FramerImage src={img} alt={title} className='w-full h-auto' whileHover={{scale:1.05}} transition={{duration:0.2}} />
       </Link>
 
-      <div className='w-1/2 flex flex-col items-start justify-between pl-6 '>
+      <div className='w-1/2 flex flex-col items-start justify-between pl-6 dark:text-light'>
         <span className='text-primary dark:text-primaryDark font-medium text-xl'>{type}</span>
-        <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
+        <Link href={link} target='_blank' className='hover:underline underline-offset-2 '>
           <h2 className='mt-2 w-full text-left text-4xl font-bold dark:text-light'>{title}</h2>
         </Link>
         <p className='my-2 font-medium text-dark dark:text-light'>{summary}</p>
         <div className='mt-2 flex items-center'>
           <Link href={github} target='_blank' className='w-10 dark:text-light'> <GithubIcon /></Link>
-          <Link href={link} target='_blank' className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold'>Visit Project</Link>
+          <Link href={link} target='_blank' className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark'>Visit Project</Link>
         </div>
       </div>
     </article>
@@ -37,10 +37,15 @@ const Project = ({ title, type, img, link, github }) => {
   return (
     <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light p-6 relative'>
       <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
-        <FramerImage src={img} alt={title} className='w-full h-auto' whileHover={{scale:1.05}} transition={{duration:0.2}} />
+        <FramerImage src={img} alt={title} className='w-full h-auto' whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}
+        priority
+        sizes='(max-widthL768px) 100vw,
+        (max-width:1200px) 60vw,
+        50vw'
+        />
       </Link>
 
-      <div className='w-full flex flex-col items-start justify-between mt-4 '>
+      <div className='w-full flex flex-col items-start justify-between mt-4 dark:text-light'>
         <span className='text-primary dark:text-primaryDark font-medium text-xl'>{type}</span>
         <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
           <h2 className='my-2 w-full text-left text-3xl font-bold dark:text-light'>{title}</h2>
@@ -74,7 +79,7 @@ const projects = () => {
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency."
-                type="Feature project"
+                type="Featured project"
                 img={image1}
                 link="/"
                 github="/"
@@ -84,7 +89,7 @@ const projects = () => {
             <div className='col-span-6'>
               <Project
                 title={'Crypto Screener Application'}
-                type="Project"
+                type="Featured project"
                 img={image1}
                 link="/"
                 github="/"
@@ -94,7 +99,7 @@ const projects = () => {
             <div className='col-span-6'>
               <Project
                 title={'Crypto Screener Application'}
-                type="Project"
+                type="Featured project"
                 img={image1}
                 link="/"
                 github="/"
@@ -108,7 +113,7 @@ const projects = () => {
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency."
-                type="Feature project"
+                type="Featured project"
                 img={image1}
                 link="/"
                 github="/"
@@ -118,7 +123,7 @@ const projects = () => {
             <div className='col-span-6'>
               <Project
                 title={'Crypto Screener Application'}
-                type="Project"
+                type="Featured project"
                 img={image1}
                 link="/"
                 github="/"
@@ -128,7 +133,7 @@ const projects = () => {
             <div className='col-span-6'>
               <Project
                 title={'Crypto Screener Application'}
-                type="Project"
+                type="Featured project"
                 img={image1}
                 link="/"
                 github="/"
