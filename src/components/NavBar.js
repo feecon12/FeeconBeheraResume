@@ -96,13 +96,13 @@ export const NavBar = () => {
                     </motion.a>
 
                     <botton onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-                        className={`ml-3 flex items-center justify-center rounded-full p-1
+                        className={`ml-5 flex items-center justify-center rounded-full p-0.5 
                         ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}
                     
                         `}
                     >
                         {
-                            mode === 'dark' ? <SunIcon className={'fill-dark'} /> : <MoonIcon className={'fill-dark'} />
+                            mode === 'dark' ? <MoonIcon className={'fill-dark'} /> : <SunIcon className={'fill-dark'} />
                         }
                     </botton>
                 </nav>
@@ -147,12 +147,12 @@ export const NavBar = () => {
                             </motion.a>
 
                             <button onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-                                className={`ml-2 flex items-center justify-center rounded-full p-1 
-                                ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}
+                                className={`ml-1 flex items-center justify-center rounded-full p-0.5 
+                                ${mode === 'light' ? 'bg-light text-dark' : 'bg-dark text-light'}
                             `}
                             >
                                 {
-                                    mode === 'dark' ? <SunIcon className={'fill-dark'} /> : <MoonIcon className={'fill-dark text-sm'} />
+                                    mode === 'dark' ? <MoonIcon className={'fill-dark'}/> : <SunIcon className={'fill-dark'}/>
                                 }
                             </button>
                         </nav>

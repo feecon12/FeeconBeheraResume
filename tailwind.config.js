@@ -10,7 +10,8 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {
+    extend:
+    {
       fontFamily: {
         mont: ['var(--font-mont)', ...fontFamily.sans],
       },

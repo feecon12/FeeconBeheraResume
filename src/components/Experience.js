@@ -54,17 +54,17 @@ const Experience = () => {
                         position={'Software Engineer'}
                         company={'PwC'}
                         companyLink={'www.pwc.com'}
-                        time={'2022-Present'}
+                        time={'2021-2023'}
                         address={'Bangalore, Karnataka'}
-                        work="Worked on a team responsible for developing and testing new features for an US giant Healthcare client. Developed a broker portal that features for enrolling different groups to avail insurance products that is to be offered by the broker"
+                        work="Worked on a team responsible for developing and testing new features for an US giant Healthcare client. Developed a broker portal that featured for enrolling different groups to avail insurance products that is to be offered by the broker"
                     />
                     <Details
                         position={'Intern'}
                         company={'Capgemini'}
                         companyLink={'www.capgemini.com'}
-                        time={'2021'}
+                        time={'2020'}
                         address={'WFH'}
-                        work="Worked on a team responsible for designing front-end feature using vanila HTML, CSS, and Javascripts. "
+                        work="Worked on a team responsible for designing front-end features using vanila HTML, CSS, and Javascripts. "
                     />
                     
                 </ul>
