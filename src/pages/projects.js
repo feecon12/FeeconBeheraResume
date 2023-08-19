@@ -5,7 +5,9 @@ import { AnimatedText } from '@/components/AnimatedText'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
-import image1 from '../../public/images/projects/crypto-screener-cover-image.jpg'
+import image1 from '../../public/images/projects/portfolio-cover1.png'
+import image2 from '../../public/images/projects/portfolio-cover2.png'
+import image3 from '../../public/images/projects/folio-dark-bio.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -99,38 +101,37 @@ const projects = () => {
           <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
             <div className='col-span-12'>
               <FeaturedProject
-                title={'Crypto Screener Application'}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
+                title={'UI-UX Web Developer Portfolio Website'}
+                summary="An online resume App using React, Tailwind CSS, Framer-motion, and React Router. 
+                It shows candidate's about, relevant work experience, and projects sections which are commonly present in modern day professional resumes. The application have dark mode feature which makes the website attractive and classic look."
                 type="Featured project"
                 img={image1}
-                link="/"
-                github="/"
+                link="https://github.com/feecon12/FeeconBeheraResume"
+                github="https://github.com/feecon12/FeeconBeheraResume"
 
               />
             </div>
             <div className='col-span-6  sm:col-span-12'>
               <Project
-                title={'Crypto Screener Application'}
+                title={'UI-UX Portfolio: Dark Mode'}
                 type="Featured project"
-                img={image1}
-                link="/"
-                github="/"
+                img={image2}
+                link="https://github.com/feecon12/FeeconBeheraResume"
+                github="https://github.com/feecon12/FeeconBeheraResume"
 
               />
             </div>
             <div className='col-span-6 sm:col-span-12'>
               <Project
-                title={'Crypto Screener Application'}
+                title={'Portfolio About Page'}
                 type="Featured project"
-                img={image1}
-                link="/"
-                github="/"
+                img={image3}
+                link="https://github.com/feecon12/FeeconBeheraResume"
+                github="https://github.com/feecon12/FeeconBeheraResume"
 
               />
             </div>
-
+{/* 
             <div className='col-span-12 sm:col-span-12'>
               <FeaturedProject
                 title={'Crypto Screener Application'}
@@ -163,7 +164,7 @@ const projects = () => {
                 github="/"
 
               />
-            </div>
+            </div> */}
 
           </div>
         </Layout>
